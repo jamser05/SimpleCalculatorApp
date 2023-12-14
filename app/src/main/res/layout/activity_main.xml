@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/resultTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:gravity="end|bottom"
+            android:text=""
+            android:textSize="48sp"
+            android:onClick="onDigit"
+            android:layout_weight="20"
+            tools:ignore="NestedWeights,UsingOnClickInXml" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/btnRow">
+        <Button
+            android:onClick="onClear"
+            android:id="@+id/clear"
+            style="@style/btnExtras"
+            android:text="AC">
+        </Button>
+        <Button
+            style="@style/btnExtras"
+            android:text="⌫"
+            >
+
+        </Button>
+
+        <Button
+            style="@style/btnNumber">
+
+        </Button>
+        <Button
+            android:onClick="onDigit"
+            android:id="@+id/btnDivide"
+            style="@style/btnOperations"
+            android:text="@string/divide"
+            tools:ignore="UsingOnClickInXml">
+
+        </Button>
+
+    </LinearLayout>
+    <LinearLayout
+        style="@style/btnRow"
+        >
+        <Button
+            android:onClick="onDigit"
+            style="@style/btnNumber"
+            android:text="@string/_7"
+            tools:ignore="UsingOnClickInXml">
+        </Button>
+        <Button
+            android:onClick="onDigit"
+            style="@style/btnNumber"
+            android:text="8">
+            >
+
+        </Button>
+        <Button
+            android:onClick="onDigit"
+            style="@style/btnNumber"
+            android:text="@string/_9"
+            tools:ignore="UsingOnClickInXml">
+        </Button>
+        <Button
+            android:onClick="onDigit"
+            android:id="@+id/btnMultiply"
+            style="@style/btnOperations"
+            android:text="@string/_multiply"
+            tools:ignore="UsingOnClickInXml">
+
+        </Button>
+
+    </LinearLayout>
+    <LinearLayout
+        style="@style/btnRow"
+        >
+        <Button
+            android:onClick="onDigit"
+            style="@style/btnNumber"
+            android:text="@string/_4"
+            tools:ignore="UsingOnClickInXml">
+        </Button>
+        <Button
+            android:onClick="onDigit"
+            style="@style/btnNumber"
+            android:text="@string/_5"
+            tools:ignore="UsingOnClickInXml">
+
+        </Button>
+        <Button
+            android:onClick="onDigit"
+            style="@style/btnNumber"
+            android:text="@string/_6"
+            tools:ignore="UsingOnClickInXml">
+
+
+        </Button>
+        <Button
+            android:onClick="onDigit"
+            android:id="@+id/btnSubtract"
+            style="@style/btnOperations"
+            android:text="@string/_subtract"
+            tools:ignore="UsingOnClickInXml">
+
+
+        </Button>
+
+    </LinearLayout>
+    <LinearLayout
+        style="@style/btnRow"
+        >
+        <Button
+            android:onClick="onDigit"
+            android:id="@+id/one"
+            style="@style/btnNumber"
+            android:text="@string/_1"
+            tools:ignore="UsingOnClickInXml">
+
+        </Button>
+        <Button
+            android:onClick="onDigit"
+            android:id="@+id/two"
+            style="@style/btnNumber"
+            android:text="@string/_2"
+            tools:ignore="UsingOnClickInXml">
+
+        </Button>
+        <Button
+            android:onClick="onDigit"
+            style="@style/btnNumber"
+            android:text="@string/_3"
+            tools:ignore="UsingOnClickInXml">
+
+        </Button>
+        <Button
+            android:onClick="onDigit"
+            android:id="@+id/btnAdd"
+            style="@style/btnOperations"
+            android:text="@string/_addition"
+            tools:ignore="UsingOnClickInXml">
+        </Button>
+
+    </LinearLayout>
+    <LinearLayout
+        style="@style/btnRow"
+        >
+        <Button
+            android:onClick="onDecimalPoint"
+            style="@style/btnNumber"
+            android:text="@string/_dot"
+            tools:ignore="UsingOnClickInXml">
+        </Button>
+        <Button
+            style="@style/btnNumber"
+            android:text="@string/_0">
+
+        </Button>
+        <Button
+            android:onClick="onEqual"
+            android:id="@+id/equals"
+            style="@style/btnNumber"
+            android:background="@color/orange"
+            android:layout_weight="2"
+            android:text="@string/_equals"
+            tools:ignore="UsingOnClickInXml">
+
+        </Button>
+
+    </LinearLayout>
+</LinearLayout>
